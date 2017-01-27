@@ -1,0 +1,36 @@
+<div ng-controller="registerCtrl">
+	<form class="form-group">
+		<table>
+		<tr class="row">
+			<td class="col-md-4"><label>username</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="username" name="username" placeholder="Enter user name" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>password</label></td>
+			<td class="col-md-8"><input class="form-control" type="password" ng-model="password" name="password" placeholder="Enter password" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>firstname</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="firstname" name="firstname" placeholder="Enter first name" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>lastname</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="lastname" name="lastname" placeholder="Enter last name" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>email</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="email" name="email" placeholder="Enter email" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>phone</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="phone" name="phone" placeholder="Enter phone" required></td>
+		</tr>
+		<tr class="row">	
+			<td class="col-md-4"><label>location</label></td>
+			<td class="col-md-8"><input class="form-control" type="text" ng-model="location" name="location" placeholder="Enter location" required></td>
+		</tr>
+		</table>	
+			<button class="btn btn-primary" ng-click="register()">Register</button>
+	</form>
+
+</div>

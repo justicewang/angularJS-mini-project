@@ -1,0 +1,28 @@
+<div ng-controller="messageCtrl">
+	<div ng-controller='homeCtrl'>
+		<h1>Welcome {{firstname}} {{lastname}}</h1><br/>
+		<div class="row" style="text-align: center;font-size: 30px;">
+			<a class="col-md-4" href="#/profile">profile</a>
+			<a class="col-md-4" href="#/message">message</a>
+			<a class="col-md-4" href="#/logout">logout</a>
+		</div>
+	</div>
+	<table class="table table-bordered table-striped table-hover">
+		<tr>
+			<td>show</td><td>recipient_img</td><td>recipient</td>
+			<td>sender_img</td><td>sender</td><td>title</td>
+			<td>created_at</td><td>important</td>
+		</tr>
+		<tr ng-repeat="m in message" >
+			<td><a href="#/message_detail/{{m.id}}">show detail</a></td>
+			<td><img ng-src="{{m.recipient_img}}" width="24px" height="24px"></td>
+			<td>{{m.recipient}}</td>
+			<td><img ng-src="{{m.sender_img}}" width="24px" height="24px"></td>
+			<td>{{m.sender}}</td>
+			<td>{{m.title}}</td>
+			<td>{{m.created_at}}</td>
+			<td>{{m.important}}</td>
+		</tr>
+	</table>
+
+</div>

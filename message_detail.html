@@ -1,0 +1,46 @@
+<div ng-controller="message_detailCtrl">
+	<div id="detail">
+	<button class="btn btn-primary" ng-click="delete()">delete</button>
+	<button class="btn btn-primary" ng-click="back()">back</button>
+	</div>
+	<table class="table table-bordered table-striped table-hover">
+		<tr>
+			<td>recipient_img</td><td>recipient</td>
+			<td>sender_img</td><td>sender</td>
+			<td>title</td><td>description</td>
+			<td>created_at</td><td>important</td>
+		</tr>
+		<tr>
+			<td><img ng-src="{{m.recipient_img}}" width="24px" height="24px"></td>
+			<td>{{m.recipient}}</td>
+			<td><img ng-src="{{m.sender_img}}" width="24px" height="24px"></td>
+			<td>{{m.sender}}</td>
+			<td>{{m.title}}</td>
+			<td>{{m.description}}</td>
+			<td>{{m.created_at}}</td>
+			<td>{{m.important}}</td>
+		</tr>
+	</table>
+	<h2 style="margin: 10px">reply the message: </h2>
+	<div class="row">
+		<label>title: </label>
+		
+	</div>
+	<div class="row">
+		<input style="width: 100%" type="text" name="title" ng-model="title">
+	</div>
+	<div class="row">	
+		<label>description: </label>
+	</div>
+	<div class="row">	
+		<input style="width: 100%" type="text" name="description" ng-model="description">
+	</div>
+	<div class="row">	
+		<label>important: </label>
+	</div>
+	<div class="row">	
+		<input type="text" name="important" ng-model="important">
+		<button class="btn btn-primary" style="margin: 10px;" ng-click="reply()">reply</button>
+	</div>
+	
+</div>
